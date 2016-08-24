@@ -43,5 +43,10 @@ node default {
   # Example:
   #   class { 'my_class': }
   notify { "Hi class, my name is ${::hostname}": }
-  include examples::fundamentals
-}
+  include examples::fundamentals}
+file { 'etc/motd':
+ensure => file,
+owner => 'root',
+group=> 'root', 
+mode => '0644',
+content => "Today I learned what it means to manage state using Puppet.\n",
