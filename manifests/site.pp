@@ -44,6 +44,7 @@ node default {
   #   class { 'my_class': }
   notify { "Hi class, my name is ${::hostname}": }
   include examples::fundamentals
+  include users
 #file { 'etc/motd':
 #ensure => file,
 #owner => 'root',
