@@ -51,6 +51,7 @@ notify { "This is a ${vmname} virtual machine.": }
   include users
   include skeleton
   include memcached
+  include user::admins
 #file { 'etc/motd':
 #ensure => file,
 #owner => 'root',
