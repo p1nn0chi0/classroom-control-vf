@@ -24,3 +24,4 @@ g feature:
 # export SYSTEMD_PAGER=
 # User specific aliases and functions
     }
+}
