@@ -44,5 +44,6 @@ node default {
   #   class { 'my_class': }
   $message = hiera('message')
   notify { $message: }
+  include nginx
   }
 }
