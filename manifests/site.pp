@@ -26,7 +26,7 @@ ini_setting { 'random ordering':
   section => 'agent',
   setting => 'ordering',
   value   => 'title-hash',
-
+}
 
 # DEFAULT NODE
 # Node definitions in this file are merged with node data from the console. See
@@ -45,5 +45,4 @@ node default {
   $message = hiera('message')
   notify { $message: }
   include nginx
-  
 }
