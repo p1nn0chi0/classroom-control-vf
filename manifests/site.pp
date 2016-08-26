@@ -19,7 +19,7 @@
 File { backup => false }
 
 ini_setting { 'random ordering':
-  ensure  => present,
+  ensure  => 'present',
   path    => "${settings::confdir}/puppet.conf",
   section => 'agent',
   setting => 'ordering',
